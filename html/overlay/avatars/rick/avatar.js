@@ -4,12 +4,12 @@ const metadata = {
 	animations: {
 		idle: {
 			left: [0],
-			right: [3],
+			right: [5],
 			frameRate: 1,
 		},
 		walking: {
 			left: [1, 2],
-			right: [4, 5],
+			right: [4, 3],
 			frameRate: 4,
 		},
 	},
