@@ -3,17 +3,17 @@ import Avatar from "../avatar.js";
 const metadata = {
 	animations: {
 		idle: {
-			left: [4],
-			right: [2],
+			left: [0],
+			right: [3],
 			frameRate: 1,
 		},
 		walking: {
-			left: [11, 12, 13],
-			right: [6, 7, 8],
-			frameRate: 6,
+			left: [1, 2],
+			right: [4, 5],
+			frameRate: 4,
 		},
 	},
-	frameHeight: 29,
+	frameHeight: 32,
 	frameWidth: 32,
 	scale: 3,
 };
