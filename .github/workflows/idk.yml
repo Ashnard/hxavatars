@@ -1,0 +1,36 @@
+name: Publish service
+on:
+  push:
+    branches: [main]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build
+        run: |
+          wget https://github.com/tmijs/tmi.js/releases/download/v1.8.5/tmi.min.js -O ./html/overlay/tmi.min.js
+
+      - uses: actions/upload-pages-artifact@v2
+        with:
+          path: html/
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v2
