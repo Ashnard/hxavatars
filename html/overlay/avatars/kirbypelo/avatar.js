@@ -3,9 +3,9 @@ import Avatar from "../avatar.js";
 const metadata = {
 	animations: {
 		idle: {
-			left: [4, 3, 5],
-			right: [2, 1, 0],
-			frameRate: 10,
+			left: [3, 4, 5],
+			right: [0, 1, 2],
+			frameRate: 20,
 		},
 		walking: {
 			left: [14, 13, 12, 11],
