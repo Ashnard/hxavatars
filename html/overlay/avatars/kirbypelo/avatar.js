@@ -8,14 +8,14 @@ const metadata = {
 			frameRate: 1,
 		},
 		walking: {
-			left: [9, 10, 11],
-			right: [6, 7, 8],
-			frameRate: 6,
+			left: [9],
+			right: [6],
+			frameRate: 1,
 		},
 	},
 	frameHeight: 29,
 	frameWidth: 32,
-	scale: 3,
+	scale: 2,
 };
 
 class ExtendedAvatar extends Avatar {
