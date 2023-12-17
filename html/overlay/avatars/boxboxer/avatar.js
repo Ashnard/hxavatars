@@ -10,7 +10,7 @@ const metadata = {
 		walking: {
 			left: [7, 8, 9],
 			right: [2, 3, 4],
-			frameRate: 6,
+			frameRate: 3,
 		},
 	},
 	frameHeight: 32,
